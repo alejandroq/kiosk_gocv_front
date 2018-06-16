@@ -36,7 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Jumbotron   className="bg-primary">
+  
+        <Jumbotron style={{height: 200}}  className="bg-primary h-25">
         <Grid>
         <Row >
         <Col className='col-md-2'>
@@ -51,10 +52,16 @@ class App extends Component {
           </Row>
           </Grid>
         </Jumbotron>
+        
         {this.state.counselorDisplay && <YourCounselor student={this.state.student} counselor={this.state.counselor} image={this.state.image} />}
 
         {this.state.cameraDisplay && <StudentCamera onClick={this.getFace}/>}
-        
+        <grid>
+
+<row>
+Powered By MachineBox.io <br/>
+        </row>
+        </grid>
       </div>
     );
   }
