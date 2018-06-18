@@ -78,7 +78,7 @@ const YourCounselor = (props) => (
     </Col>
     <Col className='col-md-8'>
     <img src={process.env.PUBLIC_URL + props.image}   height={400}  />
-    <audio src={"http://localhost:8090/audio/name/" + props.student} autoPlay></audio>
+    <audio src={"http://localhost:8090/audio/student/" + props.student + "/counselor/" + props.counselor} autoPlay></audio>
     </Col>
     </Row>
     </Grid>
